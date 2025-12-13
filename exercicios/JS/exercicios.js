@@ -1,95 +1,35 @@
-/* 
-3. Criar uma função exercicio03
-- Solicitar o nome do filme
-- Solicitar o ano de lançamento (número)
-- Solicitar a duração em minutos (número)
-- Solicitar o gênero do filme (ex: Ação, Comédia, Drama)
-- Solicitar se o filme já foi assistido (boolean - confirm)
-- Apresentar os dados do filme
+function exercicio1(){
+    let nome = prompt("Digite o Nome do Personagem: ");
+    let idade = parseInt(prompt("Digite a idade do Personagem: "));
+    let cidade = prompt("Digite a Cidade: ");
+    let poderes = confirm("Você tem poderes? ");
+    let tipoPoder = prompt("Qual seu tipo de Poder [Levitação, Manipulação Elemental, Poderes Psiquicos, Super Força] ");
+        if (tipoPoder === "Levitação") {
+            alert("Patetico!")
+        } else if (tipoPoder === "Manipulação Elemental") {
+            alert("Pika ta!")
+        } else if (tipoPoder === "Poderes Psiquicos") {
+            alert("Bacaninha...")
+        } else if (tipoPoder === "Super Força") {
+            alert("Meehh...")
+        } else 
+            { alert("Ih ala, nem tem poder kkkkkkkkkkk");
+        }
+    let atuacao = parseInt(prompt("Quantas vezes você atua? "));
 
+    alert(
+        "Super Poderes" + "\n\nNome do Heroi" + nome + "\nIdade do Heroi" + idade +
+        "\nCidade do Heroi" + cidade + "\nSuper Poderes" + poderes + "\n Quantas vezes atua"
+    );
+}
 
+function exercicio2(){
+    let ladoBase = parseFloat(prompt("Digite o valor do lado base do quadrado: "));
+    let ladoAltura = parseFloat(prompt("Digite o valor do lado altura do quadrado: "));
+    let areaQuadrado = ladoBase * ladoAltura;
 
-4. Criar uma função exercicio04
-- Solicitar o nome do produto
-- Solicitar o preço unitário (número com casa decimal)
-- Solicitar a quantidade comprada (número inteiro)
-- Calcular o valor total (preço unitário * quantidade)
-- Solicitar se o cliente é assinante Premium (boolean - confirm)
-- Se for assinante Premium, aplicar 10% de desconto no valor total
-- Apresentar todos os dados e o valor final da compra
-
-
-
-5. Criar uma função exercicio05
-- Solicitar o nome do aluno
-- Solicitar a primeira nota (número)
-- Solicitar a segunda nota (número)
-- Solicitar a terceira nota (número)
-- Calcular a média das 3 notas
-- Se a média for maior ou igual a 7, considerar "Aprovado"
-- Se a média estiver entre 5 e 6.99, considerar "Recuperação"
-- Se a média for menor que 5, considerar "Reprovado"
-- Apresentar as notas, a média e a situação do aluno
-
-
-
-6. Criar uma função exercicio06
-- Solicitar o modelo do carro
-- Solicitar o ano do carro (número)
-- Solicitar o valor do carro (número)
-- Solicitar a quantidade de parcelas (número inteiro)
-- Calcular o valor da parcela (valor do carro / quantidade de parcelas)
-- Solicitar se o cliente quer incluir seguro (boolean - confirm)
-- Se incluir seguro, adicionar R$ 150,00 ao valor da parcela
-- Apresentar todos os dados e o valor final da parcela
-
-
-
-7. Criar uma função exercicio07
-- Solicitar o nome do jogo
-- Solicitar a quantidade de horas jogadas por dia (número)
-- Solicitar a quantidade de dias jogados na semana (número)
-- Calcular o total de horas jogadas na semana (horas por dia * dias)
-- Solicitar se o jogo é online (boolean - confirm)
-- Apresentar os dados do jogo e o total de horas semanais
-
-
-
-8. Criar uma função exercicio08
-- Solicitar o nome do restaurante
-- Solicitar o valor da conta (número com casas decimais)
-- Solicitar a quantidade de pessoas na mesa (número inteiro)
-- Calcular quanto cada pessoa deve pagar (valor da conta / quantidade de pessoas)
-- Solicitar se será incluída taxa de serviço (boolean - confirm)
-- Se for incluir taxa de serviço, adicionar 10% ao valor da conta antes de dividir
-- Apresentar o valor final da conta e o valor por pessoa
-
-
-
-9. Criar uma função exercicio09
-- Solicitar o nome do funcionário
-- Solicitar o salário base (número)
-- Solicitar o valor das horas extras no mês (número)
-- Solicitar o valor dos descontos (número)
-- Calcular o salário final (salário base + horas extras - descontos)
-- Verificar se o salário final é maior que 3000
-    - Se maior que 3000, informar que o funcionário paga imposto alto
-    - Se menor ou igual a 3000, informar que o funcionário paga imposto padrão
-- Apresentar todos os dados e o salário final
-
-
-
-10. Criar uma função exercicio10
-- Solicitar o nome do cliente
-- Solicitar o saldo atual da conta (número)
-- Solicitar o valor de um depósito (número)
-- Atualizar o saldo com o depósito
-- Solicitar o valor de um saque (número)
-- Verificar se o saque é menor ou igual ao saldo
-    - Se for possível, atualizar o saldo subtraindo o saque
-    - Se não for possível, não alterar o saldo e avisar que saldo é insuficiente
-- Apresentar o nome do cliente e o saldo final da conta
-*/
+    alert("A área do quadrado é: " + areaQuadrado);
+}
 
 function exercicio3(){
     let nomeFilme = prompt("Digite o Nome do Filme: ");
