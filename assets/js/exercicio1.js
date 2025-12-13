@@ -3,7 +3,7 @@ function exercicio1(){
     let idade = parseInt(prompt("Digite a idade do Personagem: "));
     let cidade = prompt("Digite a Cidade: ");
     let poderes = confirm("Você tem poderes? ");
-        let tipoPoder = prompt("Qual seu tipo de Poder [Levitação, Manipulação Elemental, Poderes Psiquicos, Super Força] ");}
+    let tipoPoder = prompt("Qual seu tipo de Poder [Levitação, Manipulação Elemental, Poderes Psiquicos, Super Força] ");
         if (tipoPoder === "Levitação") {
             alert("Patetico!")
         } else if (tipoPoder === "Manipulação Elemental") {
@@ -12,8 +12,8 @@ function exercicio1(){
             alert("Bacaninha...")
         } else if (tipoPoder === "Super Força") {
             alert("Meehh...")
-        } else {
-            alert("Ih ala, nem tem poder kkkkkkkkkkk");
+        } else 
+            { alert("Ih ala, nem tem poder kkkkkkkkkkk");
         }
     let atuacao = parseInt(prompt("Quantas vezes você atua? "));
 
@@ -22,9 +22,18 @@ function exercicio1(){
         "\nCidade do Heroi" + cidade + "\nSuper Poderes" + poderes + "\n Quantas vezes atua"
     );
 }
+
 /*
 criar um função exercicio02 
 solicitar um lado base (numero) do quadrado
 solicitar um lado altura (numero) do quadrado
 apresentar a area do quadrado
 */
+
+function exercicio2(){
+    let ladoBase = parseFloat(prompt("Digite o valor do lado base do quadrado: "));
+    let ladoAltura = parseFloat(prompt("Digite o valor do lado altura do quadrado: "));
+    let areaQuadrado = ladoBase * ladoAltura;
+
+    alert("A área do quadrado é: " + areaQuadrado);
+}
