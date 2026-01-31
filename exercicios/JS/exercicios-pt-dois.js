@@ -205,6 +205,7 @@ function exercicio14() {
         somaSalarios = somaSalarios + salario;
         indice = indice + 1;
     }
+    
     let mediaSalarios = somaSalarios / 5;
     alert("Maior salário: " + maiorSalario.toFixed(2) + "\nMenor salário: " + menorSalario.toFixed(2) + "\nMédia dos salários: " + mediaSalarios.toFixed(2));
     if (mediaSalarios > 3000) {
